@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+        *{
+            
+            margin: 0;
+            padding: 0;
+        }
+        .container{
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* grid-column-gap: 10px;
+            grid-row-gap: 10px; */
+            grid-gap: 20px 20px;
+            
+        }
+        div.item{
+            border: 1px solid #caa;
+        }
+        /* .container{
+            display: grid;
+            height: 100vh;
+            grid-template-areas: 
+            "header header header"
+            "sidebar main main"
+            "footer footer footer" */
 
-<body>
-    <div class="banner">
-        <div class="navbar" class="logo">
-            <img src="logo3.png" alt="logo-here" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Bedroom</a></li>
-                <li><a href="#">Dining</a></li>
-                <li><a href="#">Kitchen</a></li>
-                <li><a href="#">Backyard</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <h1>DESIGN YOUR HOUSE</h1>
-            <p>New Delhi is the most populous city in India. Being the capital city of India, New Delhi is a suburb of
-                Delhi, <br> situated on the banks of Yamuna. .</p>
-                <div>
-                    <button type="button" class="buy-text"><span></span>BUY NOW</button>
-                    <button type="button"><span></span>RENT HERE !</button>
-                </div>
-        </div>
+        /* }
+      .header {
+        grid-area: header;
+        background: rgb(174, 47, 47);
+      }
+      .footer {
+        grid-area: footer;
+        background: yellow;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background: green;
+      }
+      .navbar {
+        grid-area: navbar;
+        background: pink;
+      }
+      .main {
+        grid-area: main;
+        background: magenta;
+       */
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="header">HEADER</div>
+      <div class="footer">FOOTER</div>
+      <div class="sidebar">SIDEBAR</div>
+      <div class="navbar">NAVBAR</div>
+      <div class="main">maincontent</div> -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
     </div>
-</body>
-
+  </body>
 </html>
